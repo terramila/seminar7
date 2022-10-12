@@ -10,14 +10,14 @@ int m = int.Parse(Console.ReadLine());
 Console.Write("Введите n: ");
 int n = int.Parse(Console.ReadLine());
 Random rnd = new Random();
-double [,] array = new double [m,n];
+double[,] array = new double[m, n];
 
 for (int i = 0; i < array.GetLength(0); i++)
 {
-     for (int j = 0; j < array.GetLength(1); j++)
-{ 
-    array[i,j]=rnd.Next(-100,100)/10.0;
-Console.Write($"{array[i,j]}  "); 
-} 
-Console.WriteLine(); 
-} 
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+        array[i, j] = rnd.Next(-100, 100) / 10.0;
+        Console.Write($"{array[i, j]}  ");
+    }
+    Console.WriteLine();
+}
